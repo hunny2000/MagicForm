@@ -1,11 +1,15 @@
-<html>
-<body>
+<?php
+  $highscoreFile = './highscore.txt'; 
+  $Highscore = (int) file_get_contents($highscoreFile);
+  $Score = (int) $_POST["curScore Key";
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
-
-</body>
-</html>
+  if(ScurScore > ScurHighscore)
+  {
+    file_put_contents ($highscoreFile, $Score);
+    echo "New high score updated successfully\nHigh score is: " . $Score;
+  }
+  else
+  {
+      echo $Score ." is not a new high score\nHigh score is: ". $Highscore;
+  }
+?>
