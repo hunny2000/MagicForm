@@ -3,7 +3,7 @@
   $Highscore = (int) file_get_contents($highscoreFile);
   $Score = (int) $_POST["curScore Key";
 
-  if(ScurScore > ScurHighscore)
+  if($Score > $Highscore)
   {
     file_put_contents ($highscoreFile, $Score);
     echo "New high score updated successfully\nHigh score is: " . $Score;
