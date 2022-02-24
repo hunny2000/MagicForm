@@ -1,4 +1,4 @@
 <?php
-  $Highscore = file_get_contents('./highscore.txt');
-  echo . $Highscore;
+	$curHighscore = file_get_contents('./highscore.txt');
+	echo "Current high score is: " . $curHighscore;
 ?>
