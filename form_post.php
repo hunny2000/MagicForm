@@ -1,7 +1,7 @@
 <?php
   $highscoreFile = './highscore.txt'; 
   $Highscore = (int) file_get_contents($highscoreFile);
-  $Score = (int) $_POST["curScore Key";
+  $Score = (int) $_POST["ScoreKey"];
 
   if($Score > $Highscore)
   {
